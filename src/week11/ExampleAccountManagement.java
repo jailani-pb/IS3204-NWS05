@@ -102,10 +102,12 @@ public class ExampleAccountManagement {
 		for(int i = 0; i < 5; i++) {
 			if(email.equalsIgnoreCase(emails[i])
 					&& password.equals(passwords[i])) {
+				System.out.println("You are logged in");
 				return;
 			}
 			if(email.equals(usernames[i])
 					&& password.equals(passwords[i])) {
+				System.out.println("You are logged in");
 				return;
 			}
 		}
