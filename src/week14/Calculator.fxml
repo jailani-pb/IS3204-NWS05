@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" 
+		fx:controller="week14.CalculatorController">
+	<stylesheets>
+		<URL value="@Calculator.css" />
+	</stylesheets>
+	<Label fx:id="labelResult"/>
+	<Label fx:id="labelInput"/>
+	<HBox>
+		<VBox>
+			<HBox>
+				<Button text="7" onAction="#showInput"/>
+				<Button text="8" onAction="#showInput"/>
+				<Button text="9" onAction="#showInput"/>
+				<Button text="+" onAction="#calculate"/>
+			</HBox>
+			<HBox>
+				<Button text="4" onAction="#showInput"/>
+				<Button text="5" onAction="#showInput"/>
+				<Button text="6" onAction="#showInput"/>
+				<Button text="-" onAction="#calculate"/>
+			</HBox>
+		</VBox>
+		<Button styleClass="button-lg" text="C" onAction="#clear"/> 
+	</HBox>
+	<HBox>
+		<VBox>
+			<HBox>
+				<Button text="1" onAction="#showInput"/>
+				<Button text="2" onAction="#showInput"/>
+				<Button text="3" onAction="#showInput"/>
+				<Button text="*" onAction="#calculate"/>
+			</HBox>
+			<HBox>
+				<Button text="0" onAction="#showInput"/>
+				<Button text="." onAction="#showInput"/>
+				<Button text="00" onAction="#showInput"/>
+				<Button text="/" onAction="#calculate"/>
+			</HBox>
+		</VBox>
+		<Button styleClass="button-lg" text="=" onAction="#calculate"/> 
+	</HBox>
+</VBox>
+

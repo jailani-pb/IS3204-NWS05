@@ -1,0 +1,18 @@
+* {
+	-fx-font-size: 20pt;
+}
+
+Label {
+	-fx-background-color: #ffffff;
+	-fx-pref-width: 500;
+	-fx-pref-height: 50;
+}
+
+Button {
+	-fx-pref-width: 100;
+	-fx-pref-height: 100;
+}
+
+.button-lg {
+	-fx-pref-height: 200;
+}
